@@ -1,7 +1,9 @@
 # UnDefend
 Repository hosting windows defender DOS tool
 
-This tool runs in two modes, passive and aggressive,
+This tool does not need administrative privileges and can works as a standard user.
+
+It runs in two modes, passive and aggressive,
 
 In Passive mode, the PoC blocks all signature updates, causing defender to be unable to detect any new threats so if anything new is pushed by Microsoft, it is immediately blocked.
 
