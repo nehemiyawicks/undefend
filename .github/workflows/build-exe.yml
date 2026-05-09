@@ -8,7 +8,7 @@ jobs:
   build:
     runs-on: windows-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/upload-artifact@v4
 
     - name: Setup MSVC
       uses: ilammy/msvc-dev-cmd@v1
@@ -20,3 +20,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         path: UnDefend.exe   
+
