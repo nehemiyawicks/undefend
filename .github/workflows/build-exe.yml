@@ -14,10 +14,10 @@ jobs:
       uses: ilammy/msvc-dev-cmd@v1
 
     - name: Compile UnDefend.cpp
-      run: cl.exe /EHsc /W4 /D UNICODE /D _UNICODE /Fe:UnDefend.exe UnDefend.cpp
+      run: cl.exe /EHsc /W4 /D UNICODE /D _UNICODE /Fe:UnDefend.exe UnDefend.cpp Advapi32.lib
 
     - name: Upload EXE
       uses: actions/upload-artifact@v4
       with:
-        name: UnDefend-Executable # Adding a name parameter is recommended in v4
+        name: UnDefend-Executable
         path: UnDefend.exe
